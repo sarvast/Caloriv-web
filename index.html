@@ -16,232 +16,53 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0f172a">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://caloriv-web.vercel.app/">
+    <meta property="og:url" content="https://caloriv.vercel.app/">
     <meta property="og:title" content="Caloriv - Transform Your Body, Transform Your Life">
     <meta property="og:description"
         content="The disciplined, data-driven fitness tracker built for consistency. Offline-first, no bloat, pure performance.">
-    <meta property="og:image" content="https://caloriv-web.vercel.app/assets/images/hero_mockup.png">
+    <meta property="og:image" content="https://caloriv.vercel.app/assets/images/hero_mockup.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://caloriv-web.vercel.app/">
+    <meta property="twitter:url" content="https://caloriv.vercel.app/">
     <meta property="twitter:title" content="Caloriv - Native Fitness & Calorie Tracker">
     <meta property="twitter:description"
         content="Gamify your fitness with Caloriv. Track native Indian foods, workouts, and daily streaks offline.">
-    <meta property="twitter:image" content="https://caloriv-web.vercel.app/assets/images/hero_mockup.png">
+    <meta property="twitter:image" content="https://caloriv.vercel.app/assets/images/hero_mockup.png">
 
-    <!-- Canonical Link -->
     <link rel="canonical" href="https://caloriv.vercel.app/">
-
-    <!-- Structured Data (Schema.org) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Caloriv",
-      "operatingSystem": "Android",
-      "applicationCategory": "HealthApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "description": "Offline-first native fitness tracker for calorie counting, workout logging, and streak maintenance.",
-      "softwareVersion": "69.0.0",
-      "author": {
-        "@type": "Person",
-        "name": "Sarvasva"
-      },
-      "screenshot": "https://caloriv.vercel.app/assets/images/hero_mockup.png"
-    }
-    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- FontAwesome for Icons -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Background Decoration -->
-    <div class="bg-glow">
-        <div class="bg-ornament one"></div>
-        <div class="bg-ornament two"></div>
-        <img src="assets/images/bg_gradient.png" alt=""
-            style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.4; z-index: -1;">
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <img src="assets/images/logo.png" alt="Caloriv Logo">
-                CALORIV
-            </a>
-            <div style="display: flex; gap: 1rem; align-items: center;">
-                <a href="docs.html"
-                    style="color: var(--text-muted); font-weight: 500; font-size: 0.9rem; transition: color 0.2s;"
-                    onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">
-                    Docs
-                </a>
-                <a href="https://github.com/sarvast" target="_blank" class="btn btn-secondary"
-                    style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
-        </div>
-    </nav>
-
     <!-- Hero Section -->
     <section class="hero">
         <div class="container hero-content">
             <div class="hero-text">
-                <div class="hero-badges">
-                    <span class="badge"><i class="fas fa-bolt"></i> v69.0.0 Live</span>
-                    <span class="badge"><i class="fas fa-shield-alt"></i> Offline First</span>
-                </div>
-                <h1>Transform Your Body, <br> Transform Your Life.</h1>
-                <p>The disciplined, data-driven fitness tracker built for consistency. Track calories, monitor steps,
-                    and maintain your streak without distractions.</p>
+                <h1>Transform Your Body,<br>Transform Your Life.</h1>
+                <p>Track calories, steps, and streaks with discipline.</p>
+
                 <div class="hero-cta">
-                    <a href="https://github.com/sarvast/Caloriv/raw/refs/heads/main/Caloriv.apk"
-                        class="btn btn-primary" target = "_blank" >
+                    <a href="https://github.com/sarvast/Caloriv/raw/refs/heads/main/Caloriv.apk?raw=true"
+                        class="btn btn-primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        download>
                         <i class="fab fa-android"></i> Download APK
                     </a>
+
                     <a href="#features" class="btn btn-secondary">
-                        Learn More <i class="fas fa-arrow-down" style="font-size: 0.8em;"></i>
+                        Learn More
                     </a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <!-- Placeholder for Hero Mockup -->
-                <img src="assets/images/hero_mockup.png" alt="Caloriv App Dashboard on Phone">
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Features Grid -->
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Engineered for <span class="text-gradient-purple">Performance</span></h2>
-                <p>No bloat. No ads. Just pure fitness data and motivation.</p>
-            </div>
-            <div class="feature-grid">
-                <!-- Streak System -->
-                <div class="glass-card feature-card">
-                    <div class="feature-icon" style="color: var(--fire-orange);">
-                        <i class="fas fa-fire"></i>
-                    </div>
-                    <h3>Streak System</h3>
-                    <p>Gamify your consistency. Keep the internal fire burning by hitting daily goals. Miss a day, break
-                        the chain.</p>
-                </div>
-
-                <!-- Precision Tracking -->
-                <div class="glass-card feature-card">
-                    <div class="feature-icon" style="color: var(--primary-purple);">
-                        <i class="fas fa-chart-pie"></i>
-                    </div>
-                    <h3>Precision Tracking</h3>
-                    <p>Track calories, macros, and steps with pinpoint accuracy. Visualize your deficit and TDEE in
-                        real-time.</p>
-                </div>
-
-                <!-- Offline First -->
-                <div class="glass-card feature-card">
-                    <div class="feature-icon" style="color: var(--accent-blue);">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Offline First</h3>
-                    <p>Your data lives on your device. Log meals and workouts instantly, even without an internet
-                        connection.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Detailed Showcase -->
-    <section class="showcase">
-        <div class="container">
-
-            <!-- Showcase Item 1: Streaks -->
-            <div class="showcase-item">
-                <div class="showcase-visual">
-                    <img src="assets/images/streak_card.png" alt="Streak System UI">
-                </div>
-                <div class="showcase-text">
-                    <h2 class="text-gradient-fire"> Ignite Your Discipline</h2>
-                    <p>Motivation is fleeting; discipline is forever. Our streak system visualizes your commitment.
-                        Every day you hit your targets, your fire grows.</p>
-                    <ul style="list-style: none; margin-top: 1rem;">
-                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                style="color: var(--fire-orange); margin-right: 10px;"></i> Daily Activity Goals</li>
-                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                style="color: var(--fire-orange); margin-right: 10px;"></i> Visual Progress Chain</li>
-                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                style="color: var(--fire-orange); margin-right: 10px;"></i> Hardcore Mode</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Showcase Item 2: Analytics -->
-            <div class="showcase-item reverse">
-                <div class="showcase-visual">
-                    <img src="assets/images/stats_card.png" alt="Analytics UI">
-                </div>
-                <div class="showcase-text">
-                    <h2><span class="text-gradient-purple">Data Driven</span> Results</h2>
-                    <p>Stop guessing. Analysis your weight trends, calorie intake, and macronutrient balance with
-                        professional-grade charts and insights.</p>
-                    <p>Understand your BMR, TDEE, and BMI at a glance.</p>
-                </div>
-            </div>
-
-            <!-- Showcase Item 3: Offline -->
-            <div class="showcase-item">
-                <div class="showcase-visual">
-                    <img src="assets/images/offline_icon.png" alt="Offline First Architecture">
-                </div>
-                <div class="showcase-text">
-                    <h2>Built for Speed</h2>
-                    <p>Caloriv is clear, fast, and native. We prioritize performance over gimmicks. The interface is
-                        designed for rapid logging so you can focus on your workout.</p>
-                    <div style="margin-top: 2rem;">
-                        <a href="docs.html" class="btn btn-secondary">
-                            View API Docs
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- App Gallery Section -->
-    <section class="features" style="background: rgba(30, 41, 59, 0.3);">
-        <div class="container">
-            <div class="section-header">
-                <h2>Complete <span class="text-gradient-purple">Control</span></h2>
-                <p>From nutrition to training, every aspect of your fitness is covered.</p>
-            </div>
-            <div class="feature-grid" style="grid-template-columns: 1fr 1fr; gap: 4rem;">
-                <div style="text-align: center;">
-                    <img src="assets/images/food_mockup.png" alt="Food Logging Screen"
-                        style="max-width: 100%; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.4); margin-bottom: 2rem;">
-                    <h3>Intelligent Nutrition</h3>
-                    <p>Log native foods quickly. Track macros and calories with a database built for your diet.</p>
-                </div>
-                <div style="text-align: center;">
-                    <img src="assets/images/workout_mockup.png" alt="Workout Tracking Screen"
-                        style="max-width: 100%; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.4); margin-bottom: 2rem;">
-                    <h3>Structured Training</h3>
-                    <p>Follow strict sets and reps. Monitor rest times and progressive overload.</p>
                 </div>
             </div>
         </div>
@@ -252,44 +73,22 @@
         <div class="container">
             <h2>Start Your Transformation Today</h2>
             <p>Join the community of disciplined users.</p>
-            <div style="margin-top: 2rem;">
-                <a href="https://github.com/sarvast/Caloriv/raw/refs/heads/main/Caloriv.apk" class="btn btn-primary" target = "_blank" 
-                    style="padding: 1.2rem 3rem; font-size: 1.2rem;">
-                    <i class="fab fa-android"></i> Download Caloriv v69
-                </a>
-            </div>
+
+            <a href="https://github.com/sarvast/Caloriv/raw/refs/heads/main/Caloriv.apk?raw=true"
+               class="btn btn-primary"
+               target="_blank"
+               rel="noopener noreferrer"
+               download
+               style="padding: 1.2rem 3rem; font-size: 1.2rem;">
+                <i class="fab fa-android"></i> Download Caloriv v69
+            </a>
         </div>
     </section>
 
-    <footer>
-        <div class="container footer-content">
-            <div class="logo">
-                <!-- Using placeholder text logo if image fails, but image is preferred -->
-                CALORIV
-            </div>
-            <div class="footer-links" style="flex-direction: column; align-items: flex-start; gap: 0.5rem;">
-                <p style="margin-bottom: 0.5rem; font-weight: 600; color: var(--text-white);">Connect with Developer</p>
-                <div style="display: flex; gap: 1.5rem;">
-                    <a href="mailto:ss8971132@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://wa.me/917985040858" target="_blank" title="WhatsApp"><i
-                            class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/sarvasva_69" target="_blank" title="Instagram"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/sarvast69/" target="_blank" title="LinkedIn"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/sarvast" target="_blank" title="GitHub"><i
-                            class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <div style="color: var(--text-muted); font-size: 0.9rem; text-align: right;">
-                <p>Crafted by Sarvasva</p>
-                <p>&copy; 2025 All rights reserved.</p>
-            </div>
-        </div>
+    <footer style="text-align:center; padding:2rem; color:#94a3b8;">
+        <p>Crafted by Sarvasva</p>
+        <p>&copy; 2025 All rights reserved.</p>
     </footer>
 
-    <!-- Placeholder Logo Comment: The logo.png used here is a generated placeholder conforming to the brief. Replace with official vector logo for production. -->
-
 </body>
-
 </html>
