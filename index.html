@@ -4,9 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caloriv - Transform Your Body, Transform Your Life</title>
+    <title>Caloriv - Transform Your Body, Transform Your Life | Native Fitness App</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Caloriv - Transform Your Body, Transform Your Life">
     <meta name="description"
-        content="The ultimate fitness app for calorie tracking, workout plans, and daily discipline. Download Caloriv for Android today.">
+        content="Download Caloriv, the offline-first native fitness tracker for disciplined progress. Track calories, monitor steps, and maintain streaks with precision analytics for Android.">
+    <meta name="keywords"
+        content="Caloriv, fitness app, calorie tracker, offline calorie counter, workout tracker, streak system, Android fitness, Indian diet tracker, gym logger">
+    <meta name="author" content="Sarvasva">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://caloriv-web.vercel.app/">
+    <meta property="og:title" content="Caloriv - Transform Your Body, Transform Your Life">
+    <meta property="og:description"
+        content="The disciplined, data-driven fitness tracker built for consistency. Offline-first, no bloat, pure performance.">
+    <meta property="og:image" content="https://caloriv-web.vercel.app/assets/images/hero_mockup.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://caloriv-web.vercel.app/">
+    <meta property="twitter:title" content="Caloriv - Native Fitness & Calorie Tracker">
+    <meta property="twitter:description"
+        content="Gamify your fitness with Caloriv. Track native Indian foods, workouts, and daily streaks offline.">
+    <meta property="twitter:image" content="https://caloriv-web.vercel.app/assets/images/hero_mockup.png">
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://caloriv-web.vercel.app/">
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Caloriv",
+      "operatingSystem": "Android",
+      "applicationCategory": "HealthApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Offline-first native fitness tracker for calorie counting, workout logging, and streak maintenance.",
+      "softwareVersion": "69.0.0",
+      "author": {
+        "@type": "Person",
+        "name": "Sarvasva"
+      },
+      "screenshot": "https://caloriv-web.vercel.app/assets/images/hero_mockup.png"
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
@@ -32,10 +83,17 @@
                 <img src="assets/images/logo.png" alt="Caloriv Logo">
                 CALORIV
             </a>
-            <a href="https://github.com/sarvast/Caroliv" target="_blank" class="btn btn-secondary"
-                style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">
-                <i class="fab fa-github"></i> GitHub
-            </a>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="docs.html"
+                    style="color: var(--text-muted); font-weight: 500; font-size: 0.9rem; transition: color 0.2s;"
+                    onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">
+                    Docs
+                </a>
+                <a href="https://github.com/sarvast/Caroliv" target="_blank" class="btn btn-secondary"
+                    style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -155,7 +213,7 @@
                     <p>Caloriv is clear, fast, and native. We prioritize performance over gimmicks. The interface is
                         designed for rapid logging so you can focus on your workout.</p>
                     <div style="margin-top: 2rem;">
-                        <a href="https://github.com/sarvast/Caroliv" class="btn btn-secondary">
+                        <a href="docs.html" class="btn btn-secondary">
                             View API Docs
                         </a>
                     </div>
@@ -209,13 +267,23 @@
                 <!-- Using placeholder text logo if image fails, but image is preferred -->
                 CALORIV
             </div>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Use</a>
-                <a href="https://github.com/sarvast/Caroliv">GitHub</a>
+            <div class="footer-links" style="flex-direction: column; align-items: flex-start; gap: 0.5rem;">
+                <p style="margin-bottom: 0.5rem; font-weight: 600; color: var(--text-white);">Connect with Developer</p>
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href="mailto:ss8971132@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/917985040858" target="_blank" title="WhatsApp"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/sarvasva_69" target="_blank" title="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sarvast69/" target="_blank" title="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/sarvast/Caroliv" target="_blank" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                </div>
             </div>
-            <div style="color: var(--text-muted); font-size: 0.9rem;">
-                &copy; 2025 Sarvasva. All rights reserved.
+            <div style="color: var(--text-muted); font-size: 0.9rem; text-align: right;">
+                <p>Crafted by Sarvasva</p>
+                <p>&copy; 2025 All rights reserved.</p>
             </div>
         </div>
     </footer>

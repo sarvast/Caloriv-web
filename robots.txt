@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://caloriv-web.vercel.app/sitemap.xml
