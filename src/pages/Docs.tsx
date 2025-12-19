@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ChevronRight, Database, Shield, Lock, Activity, ArrowLeft } from 'lucide-react';
+import { ChevronRight, Database, Shield, Lock, Activity } from 'lucide-react';
 
 export default function Docs() {
     const [isScrolled, setIsScrolled] = useState(false);
