@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import {
     Flame,
     Activity,
-    WifiOff,
     ArrowRight,
     Download,
     Droplets
@@ -69,33 +68,32 @@ export default function Home() {
                     >
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8 backdrop-blur-sm">
                             <span className="flex h-2 w-2 rounded-full bg-green-400 animate-pulse"></span>
-                            <span className="text-xs font-medium text-text-secondary tracking-wide uppercase">v69.0.1 Stable Release</span>
+                            <span className="text-xs font-medium text-text-secondary tracking-wide uppercase">v2.0.0 Pro Engine Live</span>
                         </div>
                         <h1 className="text-5xl md:text-7xl leading-tight mb-6">
                             Transform Your Body. <br />
-                            <span className="text-gradient">Master Your Macros.</span>
+                            <span className="text-gradient">Smart. Adaptive. Gamified.</span>
                         </h1>
                         <p className="text-lg md:text-xl text-text-secondary mb-10 max-w-xl mx-auto md:mx-0 leading-relaxed">
-                            The disciplined, data-driven fitness tracker built for consistency.
-                            Track calories, monitor steps, and maintain streaks without distractions.
+                            The intelligent fitness tracker. Now with <b>Smart Workouts</b> that adjust to your goals, <b>Indian Food Pairing</b>, and an addictive <b>Streak System</b>.
                         </p>
                         <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
-                            <a href="https://github.com/sarvast/Caloriv-web/releases/download/69.0.1/Caloriv.apk" className="btn-primary flex items-center gap-3 group">
+                            <a href="https://github.com/sarvast/Caloriv/raw/refs/heads/main/Caloriv.apk" className="btn-primary flex items-center gap-3 group">
                                 <Download size={20} />
-                                <span>Download v69.0.1</span>
+                                <span>Download v2.0.0 (Pro)</span>
                             </a>
                             <a href="#showcase" className="px-8 py-3 rounded-full text-white font-medium hover:bg-white/5 transition-colors border border-transparent hover:border-white/10 flex items-center gap-2">
-                                See Features <ArrowRight size={16} />
+                                See New Features <ArrowRight size={16} />
                             </a>
                         </div>
                         <div className="mt-12 flex items-center justify-center md:justify-start gap-8 md:gap-12 border-t border-white/5 pt-8">
                             <div>
-                                <h4 className="text-2xl font-bold text-white">100%</h4>
-                                <p className="text-sm text-text-secondary">Offline Capable</p>
+                                <h4 className="text-2xl font-bold text-white">Smart</h4>
+                                <p className="text-sm text-text-secondary">Workouts</p>
                             </div>
                             <div>
-                                <h4 className="text-2xl font-bold text-white">4.9/5</h4>
-                                <p className="text-sm text-text-secondary">Community Rating</p>
+                                <h4 className="text-2xl font-bold text-white">AI</h4>
+                                <p className="text-sm text-text-secondary">Food Pairing</p>
                             </div>
                             <div>
                                 <h4 className="text-2xl font-bold text-white">Zero</h4>
@@ -133,7 +131,7 @@ export default function Home() {
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-white">Streak Ignited</h4>
-                                    <p className="text-xs text-text-secondary">12 Day Streak!</p>
+                                    <p className="text-xs text-text-secondary">1 Day Streak!</p>
                                 </div>
                             </motion.div>
                             <motion.div
@@ -147,8 +145,8 @@ export default function Home() {
                                     <Droplets size={24} />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-white">Hydration Goal</h4>
-                                    <p className="text-xs text-text-secondary">1500ml / 2500ml</p>
+                                    <h4 className="font-bold text-white">Smart Hydration</h4>
+                                    <p className="text-xs text-text-secondary">Reminder: Drink Up! 💧</p>
                                 </div>
                             </motion.div>
                         </motion.div>
@@ -159,13 +157,13 @@ export default function Home() {
             {/* Features Grid */}
             <section id="features" className="py-24 container mx-auto px-6 relative z-10">
                 <div className="text-center mb-16 max-w-3xl mx-auto">
-                    <h2 className="text-3xl md:text-5xl mb-6">Engineered for <span className="text-gradient">Peak Performance</span></h2>
-                    <p className="text-text-secondary text-lg">Every pixel designed to keep you focused on what matters: your progress.</p>
+                    <h2 className="text-3xl md:text-5xl mb-6">Engineered for <span className="text-gradient">Results</span></h2>
+                    <p className="text-text-secondary text-lg">New "Everything" Upgrade: smarter, faster, and more addictive.</p>
                 </div>
                 <div className="grid md:grid-cols-3 gap-8">
-                    <FeatureCard icon={<Flame size={32} />} title="Streak System" desc="Gamify your consistency. Keep the internal fire burning by hitting daily goals." color="text-streak" delay={0} />
-                    <FeatureCard icon={<Activity size={32} />} title="Macro Spotlight" desc="Track calories, macros, and steps with pinpoint accuracy. Visualize your deficit." color="text-primary" delay={0.2} />
-                    <FeatureCard icon={<WifiOff size={32} />} title="Offline First" desc="Your data lives on your device. Log meals and workouts instantly." color="text-accent-blue" delay={0.4} />
+                    <FeatureCard icon={<Activity size={32} />} title="Smart Workouts" desc="Dynamic sets & reps that adapt to your goal (Muscle Gain or Weight Loss)." color="text-primary" delay={0} />
+                    <FeatureCard icon={<Flame size={32} />} title="Gamified Streaks" desc="Build an unbreakable chain. Daily login streaks keep you accountable." color="text-streak" delay={0.2} />
+                    <FeatureCard icon={<Droplets size={32} />} title="Water Reminders" desc="Stay hydrated with scheduled smart notifications throughout the day." color="text-accent-blue" delay={0.4} />
                 </div>
             </section>
 
